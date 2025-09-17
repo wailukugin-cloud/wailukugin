@@ -44,35 +44,40 @@ const products = [
 export default function App() {
   return (
    
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.35),transparent_60%)]"/>
-        <div className="mx-auto max-w-6xl px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-          <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{duration:0.6}}>
-            <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-              El espíritu del mar, en cada gota.
-            </h1>
-            <p className="mt-4 text-white/80 max-w-prose">
-              Desde lo profundo del océano emerge una nueva leyenda. Wailuku Gin, destilado artesanal con una
-              selección precisa de botánicos, equilibrio limpio y final persistente.
-            </p>
-            <div className="mt-8 flex gap-3">
-              <a href="#shop" className="px-5 py-3 rounded-2xl bg-white text-black font-medium hover:bg-white/90 transition">Comprar ahora</a>
-              <a href="#origen" className="px-5 py-3 rounded-2xl border border-white/20 hover:border-white/40 transition">Conocer más</a>
-            </div>
-          </motion.div>
-          <motion.div initial={{opacity:0, scale:0.98}} animate={{opacity:1, scale:1}} transition={{duration:0.6, delay:0.1}} className="relative">
-            <div className="aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
-              <img
-                src="https://res.cloudinary.com/<tu_cloud_name>/image/upload/f_auto,q_auto,w_1200/<PUBLIC_ID_BOTELLA>.png"
-                alt="Botella Wailuku"
-                className="h-full w-full object-contain bg-transparent"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-white text-black px-4 py-2 rounded-xl shadow">Lote de 26 botellas</div>
-          </motion.div>
-        </div>
-      </section>
+     {/* HERO */}
+<section className="bg-[#2b1723] text-white py-16">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Texto */}
+    <div>
+      <p className="uppercase tracking-widest text-sm mb-4 text-gray-300">
+        Una nueva experiencia en tu copa
+      </p>
+      <h1 className="text-5xl font-bold mb-6">WAILUKU GIN</h1>
+      <p className="text-lg mb-8 text-gray-200">
+        De las aguas más intensas surge la esencia de Wailuku Gin: 
+        botánicos seleccionados, equilibrio perfecto y un carácter inconfundible.
+      </p>
+      <a
+        href="#"
+        className="inline-block bg-white text-black font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-200 transition"
+      >
+        Conocer más
+      </a>
+    </div>
+
+    {/* Imagen */}
+    <div className="flex justify-center">
+      <img
+        src="https://res.cloudinary.com/dcgcfpjcf/image/upload/v1758126805/UNA_NUEVA_EXPERIENCIA_EN_TU_COPA_zzyca1.png"
+        alt="Botella Wailuku"
+        className="rounded-lg shadow-lg max-h-[500px]"
+      />
+    </div>
+
+  </div>
+</section>
+
 
       {/* ORIGEN */}
       <section id="origen" className="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
