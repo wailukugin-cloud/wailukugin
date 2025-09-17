@@ -43,26 +43,7 @@ const products = [
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0b0c10] text-white antialiased">
-      {/* NAV */}
-      <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-[#0b0c10]/70 bg-[#0b0c10]/60 border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-white/5 grid place-items-center border border-white/10">
-              {/* Tridente */}
-              <span className="text-xl leading-none">⚔️</span>
-            </div>
-            <span className="font-semibold tracking-wide">WAILUKU GIN</span>
-          </div>
-          <nav className="hidden sm:flex items-center gap-6 text-sm text-white/80">
-            <a href="#origen" className="hover:text-white">Origen</a>
-            <a href="#botanicos" className="hover:text-white">Botánicos</a>
-            <a href="#shop" className="hover:text-white">Comprar</a>
-            <a href="#contacto" className="hover:text-white">Contacto</a>
-          </nav>
-        </div>
-      </header>
-
+   
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.35),transparent_60%)]"/>
